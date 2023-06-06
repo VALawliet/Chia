@@ -1,0 +1,14 @@
+.lateral{
+    width: 30%;
+    
+    border-radius: 15px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+    background-image: linear-gradient(180deg, rgba(185, 194, 51, 0.671) 0%, #E3FFFF 100%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.lateral .chia_image img{
+    width: 400px
+}

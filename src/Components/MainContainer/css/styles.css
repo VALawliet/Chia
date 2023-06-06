@@ -1,0 +1,7 @@
+.main_container{
+    width: 96%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}

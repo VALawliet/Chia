@@ -1,25 +1,54 @@
-import logo from './logo.svg';
+import { BrowserRouter, useRoutes } from 'react-router-dom';
 import './App.css';
+import { Home } from './Pages/Home';
+import { Twitter } from './Pages/Twitter';
+import { YouTube } from './Pages/Youtube';
+import { Twitch } from './Pages/Twitch';
+import { NotFound } from './Pages/NotFound';
+import { Navbar } from './Components/Navbar';
+import { Aside } from './Components/Aside';
+import { MainContainer } from './Components/MainContainer';
+
+function AppRoutes(){
+  let routes = useRoutes([
+    {
+      path: '/', element: <Home/>
+    },
+
+    {
+      path: '/twt', element: <Twitter/>
+    }, 
+
+    {
+      path: '/yt', element: <YouTube/>
+    },
+
+    {
+      path: '/yt2', element: <div></div>
+    },
+
+    {
+      path: '/twitch', element: <Twitch/>
+    },
+    {
+      path: '/*', element: <NotFound/>
+    }
+  ]);
+
+  return routes
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <BrowserRouter>
+      <Navbar/>
+      <MainContainer>
+        <Aside/>
+        <AppRoutes/>
+      </MainContainer>
+      
+    </BrowserRouter>
+  )
 }
 
 export default App;

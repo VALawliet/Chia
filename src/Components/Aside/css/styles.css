@@ -9,6 +9,144 @@
     background-size: cover;
 }
 
+.lateral h2, .lateral h3, .lateral h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 1px 6px #6073e088;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+.lateral h4, .lateral h5, .lateral h6{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
 .lateral .chia_image img{
     width: 400px
+}
+
+.lateral .discord_join, .lateral .merch, .lateral .gift, .lateral .tips .kofi, .lateral .tips .streamlabs{
+    
+    width: 30%;
+    height: 50px;
+    background-image: linear-gradient(45deg, rgba(123, 77, 209, 0.769) 0%, rgba(90, 168, 194, 0.527) 100%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 250ms;
+}
+
+.lateral .discord_join:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(128, 0, 70);
+    transform: translateY(-0.25em)
+    
+}
+
+.lateral .discord_join a, .lateral .merch a, .lateral .gift a, .lateral .tips .kofi a, .lateral .tips .streamlabs a{
+    font-family: 'kalam';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.lateral .merch{
+    background-image: linear-gradient(45deg, rgba(224, 173, 61, 0.769) 0%, rgba(55, 127, 151, 0.527) 100%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    transition: all 350ms;
+}
+
+.lateral .merch:hover{
+    box-shadow: 
+    inset -4em 0 0 0 rgb(128, 0, 70),
+    inset 4em 0 0 0 rgb(128, 0, 70); 
+    transform: scale(1.1);
+}
+
+.lateral .gift{
+    background-image: linear-gradient(45deg, rgba(194, 238, 74, 0.769) 0%, rgba(22, 99, 124, 0.527) 100%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    transition: all 350ms;
+}
+
+.lateral .gift:hover{
+    box-shadow: inset 0 0 0 2em rgb(86, 153, 161);
+    transform: scale(1.1);
+}
+
+.lateral .tips{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lateral .tips .kofi{
+    background-image: linear-gradient(45deg, rgba(136, 25, 25, 0.829) 0%, rgba(40, 192, 159, 0.418) 100%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    transition: all 350ms;
+    
+}
+
+.lateral .tips .kofi:hover{
+    transform: scale(1.1);
+    animation: pulse 1s ;
+    box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse{
+    0% { box-shadow: 0 0 0 0 rgba(168, 23, 23, 0.377); }
+}
+
+.lateral .tips .streamlabs{
+    position: relative;
+    background-image: linear-gradient(45deg, rgba(28, 161, 161, 0.829) 0%, rgba(0, 0, 0, 0.418) 100%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    transition: all 350ms;
+}
+
+.lateral .tips .streamlabs:hover{
+    transform: scale(1.1);
+}
+
+.lateral .tips .streamlabs a{
+    position: relative;
+    z-index: 1
+}
+
+.lateral .tips .streamlabs .inner{
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    background-color: rgba(219, 145, 34, 0.479);
+    transition: all 350ms;
+    border-radius: 15px;
+    
+}
+
+.lateral .tips .streamlabs:hover .inner{
+    
+    margin-left: calc(100% - 186.4px);
+    margin-top: calc(50px - 75px) ;
+    width: 100%;
+    height: 100%;
+    
 }

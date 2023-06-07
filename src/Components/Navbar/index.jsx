@@ -40,7 +40,7 @@ function Navbar(){
                     
                     <img src='https://i.ibb.co/5LWkK7X/chia.jpg'/>
                     <span className='inner'></span>
-                    <div className='credits'>Art by <a href = "#">uwu</a></div>
+                    <div className='credits'>Art by <a href = "https://twitter.com/tyuna_24">@tyuna_24</a></div>
                 
                 </li>
 

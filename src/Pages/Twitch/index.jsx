@@ -1,42 +1,11 @@
-import { useEffect } from "react";
-import { useState } from "react";
+
 import { APIPending } from "../../Components/APIPending";
 import './css/styles.css'
 
 
-function Twitch(){
+function Twitch({clips}){
 
-    const [values, setValues] = useState({});
-    const [pending, setPending] = useState(true)
-
-    const url = 'https://twitch-channel-clips.p.rapidapi.com/public/clips/ChiaVTuber';
-    const options = {
-	    method: 'GET',
-	    headers: {
-		    'X-RapidAPI-Key': '1acd503002msh7b01f409eb0e337p1a92bejsn83cd054153c1',
-		    'X-RapidAPI-Host': 'twitch-channel-clips.p.rapidapi.com'
-	    }
-    };
-
-    async function fetchTwitch(url, options){
-        try {
-            const response = await fetch(url, options);
-            const result = await response.json();
-            
-            setValues(result)
-            setPending(false)
-            console.log(values)
-        } catch (error) {
-            console.error(error);
-        }
-    }
-
-    useEffect(()=>{
-        fetchTwitch(url, options);
-    },  [])
-
-    const clips = {...values}
-    console.log('uwu' + clips)
+    
 
 
 
@@ -45,8 +14,8 @@ function Twitch(){
             <h2>Check Out the main clips of my channel!</h2>
             <div className="clips">
 
-                {pending && <APIPending/> }
-                {!pending && clips?.clips?.map((clip)=>{
+                
+                {clips?.clips?.map((clip)=>{
 
                     if(clip.views >= 85){
                         if(clip.title.length > 24 ){

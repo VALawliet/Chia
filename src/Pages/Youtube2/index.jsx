@@ -1,15 +1,16 @@
 import './css/styles.css'
-function YouTube({ytVids1}){
+
+function Youtube2({ytVids2}){
     return(
         <section className="videos_section">
             <h2>Check out my most recent videos on Youtube!</h2>
             <div className="videos">
 
                 
-                {ytVids1?.videos?.map((video)=>{
+                {ytVids2?.videos?.map((video)=>{
                     let views = video.number_of_views.replace(' views', '');
                     let views_num = parseInt(views);
-                    if(views_num >= 200){
+                    if(views_num >= 5 ){
                         if(video.title.length > 24 ){
                             return(
                                 <div key = {video.title}className="video">
@@ -20,7 +21,7 @@ function YouTube({ytVids1}){
                         }
                         return(
                             <div key = {video.title}className="video">
-                                <iframe width="560" height="315" src={`https://www.youtube.com/embed/ ${video.video_id}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src={`https://www.youtube.com/embed/${video.video_id}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                  <span className="video_text">{video.title}</span>
                             </div>
                         )
@@ -32,4 +33,4 @@ function YouTube({ytVids1}){
     )
 }
 
-export {YouTube}
+export {Youtube2}

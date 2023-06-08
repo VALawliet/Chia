@@ -149,3 +149,7 @@
 .right .link #twitter{
     top: 20px
 }
+
+.home_link{
+    text-decoration: none;
+}

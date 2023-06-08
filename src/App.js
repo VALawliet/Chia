@@ -47,6 +47,15 @@ function AppRoutes(){
      }
    };
 
+   const urlYTBackup = 'https://youtube-search6.p.rapidapi.com/channel/videos/?channelId=UCyK6FWxE57tBrGxGtmHT0sw';
+  const optionsYTBackup = {
+	    method: 'GET',
+	    headers: {
+		    'X-RapidAPI-Key': 'a798894fc3msh5d7aaab3804cf26p1904ddjsn084ca00e22c5',
+		    'X-RapidAPI-Host': 'youtube-search6.p.rapidapi.com'
+	    }
+    };
+
     const urlYT2 = 'https://youtube-search6.p.rapidapi.com/channel/videos/?channelId=UC6ZFjYbL3w9z9qFFtr2vi1Q';
     const optionsYT2 = {
 	    method: 'GET',
@@ -55,6 +64,17 @@ function AppRoutes(){
 		    'X-RapidAPI-Host': 'youtube-search6.p.rapidapi.com'
 	    }
     };
+
+    const urlYTBackup2 = 'https://youtube-search6.p.rapidapi.com/channel/videos/?channelId=UC6ZFjYbL3w9z9qFFtr2vi1Q';
+    const optionsYTBackup2 = {
+	    method: 'GET',
+	    headers: {
+		    'X-RapidAPI-Key': 'a798894fc3msh5d7aaab3804cf26p1904ddjsn084ca00e22c5',
+		    'X-RapidAPI-Host': 'youtube-search6.p.rapidapi.com'
+	    }
+    };
+
+
 
     const urlTw = 'https://twitter135.p.rapidapi.com/v2/UserTweets/?id=1442476366574731265&count=12';
     const optionsTw = {
@@ -96,26 +116,43 @@ function AppRoutes(){
         }
   }
 
-  async function fetchYT(url, options){
+  async function fetchYT(url, options, url2, options2){
     try{
       const responseYT = await fetch(url, options);
       const resultYT = await responseYT.json();
+
+      if(resultYT?.message == "You have exceeded the MONTHLY quota for Channel on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/omarmhaimdat/api/youtube-search6"){
+        const responseYTBackup = await fetch(url2, options2);
+        const resultYTBackup =  await responseYTBackup.json();
+        setValuesYT(resultYTBackup);
+        console.log('if')
+        console.log(resultYTBackup)
+      }else{
+        setValuesYT(resultYT);
+        console.log('else')
+        console.log(resultYT)
+      }
       
       
-      setValuesYT(resultYT);
+      
       
     }catch(error){
       console.log(error)
     }
   }
 
-  async function fetchYT2(url, options){
+  async function fetchYT2(url, options, url2, options2){
     try{
       const responseYT2 = await fetch(url, options);
       const resultYT2 = await responseYT2.json();
       
-      setValuesYT2(resultYT2);
-      console.log(resultYT2)
+      if(resultYT2?.message == "You have exceeded the MONTHLY quota for Channel on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/omarmhaimdat/api/youtube-search6"){
+        const responseYTBackup2 = await fetch(url2, options2);
+        const resultYTBackup2 =  await responseYTBackup2.json();
+        setValuesYT2(resultYTBackup2)
+      }else{
+        setValuesYT2(resultYT2);
+      }
     }catch(error){
       console.log(error)
     }
@@ -136,8 +173,8 @@ function AppRoutes(){
 
   useEffect(()=>{
       fetchTwitch(urlTwitch, optionsTwitch, urlTwicth2, optionsTwitch2);
-      fetchYT(urlYT, optionsYT);
-      fetchYT2(urlYT2, optionsYT2)
+      fetchYT(urlYT, optionsYT, urlYTBackup, optionsYTBackup);
+      fetchYT2(urlYT2, optionsYT2, urlYTBackup2, optionsYTBackup2)
       fetchTwitter(urlTw, optionsTw)
       setPending(false);
   },  [])

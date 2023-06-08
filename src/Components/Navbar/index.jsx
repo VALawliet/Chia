@@ -40,12 +40,15 @@ function Navbar(){
                     
                     <img src='https://i.ibb.co/5LWkK7X/chia.jpg'/>
                     <span className='inner'></span>
-                    <div className='credits'>Art by <a href = "https://twitter.com/tyuna_24">@tyuna_24</a></div>
+                    <div className='credits'>Art by <a target='_blank' href = "https://twitter.com/tyuna_24">@tyuna_24</a></div>
                 
                 </li>
 
                 <li>
-                    <h1>@ChiaVTuber</h1>
+                    <NavLink to='/' className='home_link'>
+                        <h1>@ChiaVTuber</h1>
+                    </NavLink>
+                    
                 </li>
                 
             </ul>

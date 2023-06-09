@@ -1,6 +1,9 @@
 import './css/styles.css'
 
 function Aside(){
+
+    
+    
     return(
         <aside className="lateral">
             <h2>Do you want to build a deeper connection with my community?</h2>
@@ -26,11 +29,13 @@ function Aside(){
                 </div>
 
                 <div className='streamlabs'>
-                    <span className='inner'></span>
+                    <span className='inner_one'></span>
                     <a target='_blank' href='https://streamlabs.com/chiavtuber/tip'>Streamlabs</a>
                 </div>
             </div>
+            
             <div className="chia_image">
+                <img className= 'big'src="https://i.ibb.co/rv8BLTL/output-onlinegiftools.gif" alt="output-onlinegiftools" border="0"/>
                 <img src="https://i.ibb.co/XXFBRH2/chia1.png" alt="chia1" border="0"/>
             </div>
 

@@ -1,6 +1,6 @@
 .clips_section{
     width: 65%;
-    background-image: linear-gradient(180deg, rgba(202, 151, 236, 0.445) 0%, #c4def8 100%);
+    background-image: linear-gradient(180deg, rgba(162, 109, 248, 0.445) 0%, #c4def8 100%);
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
     background-position: 0% 0%;
     background-repeat: repeat;
@@ -10,6 +10,7 @@
 
 .clips_section h2{
     text-align: center;
+    font-size: 35px;
 }
 
 .clips{
@@ -20,7 +21,8 @@
 
 .clips .clip{
     width: 30%;
-    margin-bottom: 15px;
+    margin: 10px;
+    margin-bottom: 30px;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
     border-radius: 15px;
     
@@ -50,4 +52,44 @@
 
 .clips .clip .long{
     text-align: left !important;
+}
+
+.direct_twitch{
+    width: 50%;
+    height: 100px;
+    margin: 0px auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.direct_twitch a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgba(123, 77, 209, 0.769) 0%, rgba(90, 168, 194, 0.527) 100%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 250ms;
+}
+
+.direct_twitch a:hover{
+    background-image: linear-gradient(45deg, rgba(144, 84, 255, 0.769) 0%, rgba(130, 224, 255, 0.527) 100%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    transform: scale(1.1);
+}
+
+.direct_twitch a .text{
+    font-family: 'kalam';
+    font-size: 20px;
+    position: absolute;
+    top: 35%
 }

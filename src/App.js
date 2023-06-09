@@ -42,7 +42,7 @@ function AppRoutes(){
    const optionsYT = {
      method: 'GET',
      headers: {
-       'X-RapidAPI-Key': '1acd503002msh7b01f409eb0e337p1a92bejsn83cd054153c1',
+       'X-RapidAPI-Key': '1c4db26d9amsha5a92c03cf2c3e5p1a6057jsn7b17730abd7e',
        'X-RapidAPI-Host': 'youtube-search6.p.rapidapi.com'
      }
    };
@@ -51,7 +51,7 @@ function AppRoutes(){
   const optionsYTBackup = {
 	    method: 'GET',
 	    headers: {
-		    'X-RapidAPI-Key': 'a798894fc3msh5d7aaab3804cf26p1904ddjsn084ca00e22c5',
+		    'X-RapidAPI-Key': '425b0c3eefmsh4cf6143a83f3a4dp15c7c2jsneb4445cf71ff',
 		    'X-RapidAPI-Host': 'youtube-search6.p.rapidapi.com'
 	    }
     };
@@ -60,7 +60,7 @@ function AppRoutes(){
     const optionsYT2 = {
 	    method: 'GET',
 	    headers: {
-		    'X-RapidAPI-Key': '1acd503002msh7b01f409eb0e337p1a92bejsn83cd054153c1',
+		    'X-RapidAPI-Key': '1c4db26d9amsha5a92c03cf2c3e5p1a6057jsn7b17730abd7e',
 		    'X-RapidAPI-Host': 'youtube-search6.p.rapidapi.com'
 	    }
     };
@@ -69,7 +69,7 @@ function AppRoutes(){
     const optionsYTBackup2 = {
 	    method: 'GET',
 	    headers: {
-		    'X-RapidAPI-Key': 'a798894fc3msh5d7aaab3804cf26p1904ddjsn084ca00e22c5',
+		    'X-RapidAPI-Key': '425b0c3eefmsh4cf6143a83f3a4dp15c7c2jsneb4445cf71ff',
 		    'X-RapidAPI-Host': 'youtube-search6.p.rapidapi.com'
 	    }
     };

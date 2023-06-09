@@ -40,6 +40,10 @@ function Twitch({clips}){
                     
                 })}
             </div>
+
+            <div className="direct_twitch">
+                <a href = "https://www.twitch.tv/chiavtuber"><span className="text">Don't miss out on any of my streams!</span></a>
+            </div>
         </section>
     )
 }

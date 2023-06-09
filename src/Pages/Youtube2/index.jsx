@@ -10,7 +10,7 @@ function Youtube2({ytVids2}){
                 {ytVids2?.videos?.map((video)=>{
                     let views = video.number_of_views.replace(' views', '');
                     let views_num = parseInt(views);
-                    if(views_num >= 5 ){
+                    if(views_num >= 7 ){
                         if(video.title.length > 24 ){
                             return(
                                 <div key = {video.title}className="video">

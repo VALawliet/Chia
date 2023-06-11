@@ -8,6 +8,7 @@ import { Twitch } from './Pages/Twitch';
 import { NotFound } from './Pages/NotFound';
 import { Navbar } from './Components/Navbar';
 import { Aside } from './Components/Aside';
+import { Footer } from './Components/Footer';
 import { MainContainer } from './Components/MainContainer';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -222,6 +223,7 @@ function App() {
         <Aside/>
         <AppRoutes/>
       </MainContainer>
+      <Footer/>
       
     </BrowserRouter>
   )

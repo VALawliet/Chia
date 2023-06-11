@@ -18,7 +18,8 @@ function Twitter({tweets}){
                     )}
 
                 <button className= 'follow'>
-                    <a href= 'https://twitter.com/chiavtuber'>You can see more here!</a>
+                    <a target= '_blank'href= 'https://twitter.com/chiavtuber'>
+                        <span>You can see more here!</span></a>
                 </button>
             </div>
 

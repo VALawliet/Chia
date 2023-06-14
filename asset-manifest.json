@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Chia/static/css/main.45419fde.css",
+    "main.js": "/Chia/static/js/main.a18ab8cb.js",
+    "static/js/787.af6efd48.chunk.js": "/Chia/static/js/787.af6efd48.chunk.js",
+    "static/media/CONFN___.TTF": "/Chia/static/media/CONFN___.c159a5776ed44ab1be5b.TTF",
+    "static/media/reddit-svgrepo-com.svg": "/Chia/static/media/reddit-svgrepo-com.be1f93e808d5dcf0e911ab032505972a.svg",
+    "static/media/gmail-svgrepo-com.svg": "/Chia/static/media/gmail-svgrepo-com.eb98ed683faa5a55ee736bc8609a88ce.svg",
+    "static/media/twitter-seeklogo.com.svg": "/Chia/static/media/twitter-seeklogo.com.982ea4641dd0b68b23fba689c8a48891.svg",
+    "static/media/art-station.svg": "/Chia/static/media/art-station.193a0f2cf216c748419097973a993a78.svg",
+    "index.html": "/Chia/index.html",
+    "static/media/youtube-svgrepo-com.svg": "/Chia/static/media/youtube-svgrepo-com.26f0466bb1c062360604f07e01a4f26b.svg",
+    "static/media/tiktok.svg": "/Chia/static/media/tiktok.e908aacf108c921c68386c0c5f402614.svg",
+    "static/media/twitch-icon.svg": "/Chia/static/media/twitch-icon.08efe9f288e1eb00e5721e80d220772f.svg",
+    "main.45419fde.css.map": "/Chia/static/css/main.45419fde.css.map",
+    "main.a18ab8cb.js.map": "/Chia/static/js/main.a18ab8cb.js.map",
+    "787.af6efd48.chunk.js.map": "/Chia/static/js/787.af6efd48.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45419fde.css",
+    "static/js/main.a18ab8cb.js"
+  ]
+}

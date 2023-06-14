@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Chia/static/css/main.45419fde.css",
-    "main.js": "/Chia/static/js/main.a18ab8cb.js",
+    "main.js": "/Chia/static/js/main.d9a136df.js",
     "static/js/787.af6efd48.chunk.js": "/Chia/static/js/787.af6efd48.chunk.js",
     "static/media/CONFN___.TTF": "/Chia/static/media/CONFN___.c159a5776ed44ab1be5b.TTF",
     "static/media/reddit-svgrepo-com.svg": "/Chia/static/media/reddit-svgrepo-com.be1f93e808d5dcf0e911ab032505972a.svg",
@@ -13,11 +13,11 @@
     "static/media/tiktok.svg": "/Chia/static/media/tiktok.e908aacf108c921c68386c0c5f402614.svg",
     "static/media/twitch-icon.svg": "/Chia/static/media/twitch-icon.08efe9f288e1eb00e5721e80d220772f.svg",
     "main.45419fde.css.map": "/Chia/static/css/main.45419fde.css.map",
-    "main.a18ab8cb.js.map": "/Chia/static/js/main.a18ab8cb.js.map",
+    "main.d9a136df.js.map": "/Chia/static/js/main.d9a136df.js.map",
     "787.af6efd48.chunk.js.map": "/Chia/static/js/787.af6efd48.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.45419fde.css",
-    "static/js/main.a18ab8cb.js"
+    "static/js/main.d9a136df.js"
   ]
 }
